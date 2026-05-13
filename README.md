@@ -31,4 +31,4 @@
 
 
 ### Original project
-*[EUA/ESP32_LogicAnalyzer](://github.com/EUA/ESP32_LogicAnalyzer/)*
+*[EUA/ESP32_LogicAnalyzer](https://github.com/EUA/ESP32_LogicAnalyzer/)*
