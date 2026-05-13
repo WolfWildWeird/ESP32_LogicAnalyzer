@@ -1,5 +1,5 @@
-ESP32 LogicAnalyzer
-A *SUMP* compatible 16Bit Logic Analyzer for ESP32 MCUs.
+# ESP32 LogicAnalyzer
+### A *SUMP* compatible 16Bit Logic Analyzer for ESP32 MCUs.
 
 ![PulseView](/ESP32_LogicAnalyzer_in_PulseView.png)
 
@@ -18,11 +18,6 @@ A *SUMP* compatible 16Bit Logic Analyzer for ESP32 MCUs.
   - **GPIO23** used for I2S input clk and  **GPIO22** LEDC clk output.  Don't use those for IO or change them and connect them to another unused pins at code.
 
 
-If you like it, why not to say thanks or support via [Patreon](https://www.patreon.com/EUA)
-
-This project steals some code from [esp32-cam-demo](https://github.com/igrr/esp32-cam-demo) for I2S DMA and [Arduino Logic Analyzer](https://github.com/gillham/logic_analyzer) as SUMP protocol "template".
-
-
 ## Quick start guide
 1. Use PlatformIO (in VS Code) to open the project folder
 2. Modify ESP32_LogicAnalyzer.h for make a fit to your board.
@@ -30,3 +25,10 @@ This project steals some code from [esp32-cam-demo](https://github.com/igrr/esp3
 4. Connect cfg.gpio_clk_in (default pin23 )and cfg.gpio_clk_out (default pin22).
 5. Open PulseView with `pulseview -D -d ols:conn=/dev/ttyUSB0::serialcomm=921600/8n1`  ,or from gui, connect device and select Openbench Logic Sniffer & SUMP compatibles (ols)
 6. Channels vs PINS are also available at setup() function. You can also change ports/baud from ESP32_LogicAnalyzer.h file. Please check it out before use.
+
+
+
+
+
+### Original project
+*[ESP32_LogicAnalyzer](://github.com/EUA/ESP32_LogicAnalyzer/blob/master/README.md)*
